@@ -1,0 +1,20 @@
+{
+  "name": "xxx",
+  "version": "1.0.0",
+  "description": "study ",
+  "main": "server.js",
+  "dependencies": {
+    "node-mysql": "^0.4.2",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "\u001b[\u001b["
+  ],
+  "author": "yaohao",
+  "license": "ISC"
+}

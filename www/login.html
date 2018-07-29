@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+    <script src="jquery.js"></script>
+
+    <script>
+        window.onload= $(function () {
+
+            $("#reg").click(function () {
+
+                $.ajax({
+                    url:"/reg",
+                    data:{
+                        username:$("#username").val(),
+                        password:$("#password").val()
+
+                    },
+                    type:"get"
+
+
+                }).then(function (res) {
+                    alert(res)
+                })
+
+
+            });
+
+            $("#login").click(function () {
+
+                $.ajax({
+                    url:"/login",
+                    data:{
+                        username:$("#username").val(),
+                        password:$("#password").val()
+
+                    },
+                    type:"get"
+
+
+                }).then(function (res) {
+                    alert(res)
+                })
+
+
+            })
+
+
+        })
+
+
+
+
+    </script>
+
+</head>
+<body>
+    用户名:<input type="text" id="username">
+    密码:<input type="password" id="password">
+    <input id="reg" type="button" value="注册">
+    <input id="login" type="button" value="登录">
+
+</body>
+</html>
